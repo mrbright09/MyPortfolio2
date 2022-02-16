@@ -335,10 +335,10 @@ figure {
           #teakwood-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn {
             color: #fff;
             border: 1px solid #fff;
-            background: transparent !important; }
+            background: #9d4a03 !important; }
             #teakwood-hero .flexslider .slider-text > .slider-text-inner .btn.btn-learn:hover {
-              background: transparent !important;
-              border: 1px solid #000 !important; }
+              background: #9d4a039e !important;
+              border: 1px solid #fff !important; }
           @media screen and (max-width: 768px) {
             #teakwood-hero .flexslider .slider-text > .slider-text-inner .btn {
               width: 100%; } }
