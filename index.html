@@ -12,22 +12,11 @@
   <meta property="og:description" content="Explore Mikal Bright's technical journey, automation projects, and cloud engineering experience.">
   <meta property="og:image" content="https://mikalbright.com/images/AboutMe.jpg">
   <title>Mikal Bright | Azure Cloud Engineer</title>
-
-  <!-- Favicon -->
   <link rel="icon" href="/favicon-32x32.png" type="image/png">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Core CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
-  <!-- Custom Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css" integrity="sha512-KeFiXYqf6zHgRci3q84ykKpl6ZsE26mUyT2vuZyYfbCH5Eh3Ywr+9keD2Mlfg3j/5TqKlx2kBjM2ZnztPdF0Jg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     :root {
       --bg-light: #ffffff;
@@ -35,23 +24,19 @@
       --text-light: #333;
       --text-dark: #e0e0e0;
     }
-
     body {
       font-family: 'Quicksand', sans-serif;
       background-color: var(--bg-light);
       color: var(--text-light);
       transition: background-color 0.3s ease, color 0.3s ease;
     }
-
     body.dark-mode {
       background-color: var(--bg-dark);
       color: var(--text-dark);
     }
-
     h1, h2, h3, h4, h5, h6 {
       font-family: 'Playfair Display', serif;
     }
-
     .btn-primary {
       background-color: #0066cc;
       border-color: #005cbf;
@@ -60,11 +45,6 @@
       background-color: #004c99;
       border-color: #003f7f;
     }
-
-    .progress-bar {
-      transition: width 1s ease-in-out;
-    }
-
     .floating-contact-btn {
       position: fixed;
       bottom: 25px;
@@ -81,7 +61,6 @@
     .floating-contact-btn:hover {
       background-color: #0056b3;
     }
-
     .skip-link {
       position: absolute;
       top: -40px;
@@ -94,7 +73,6 @@
     .skip-link:focus {
       top: 0;
     }
-
     .dark-toggle {
       position: fixed;
       top: 20px;
@@ -107,6 +85,24 @@
       cursor: pointer;
       z-index: 1000;
     }
+    .flexslider {
+      margin: 0;
+      padding: 0;
+    }
+    .flexslider .slides > li {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    .slider-text h1,
+    .slider-text h2 {
+      color: #fff;
+    }
+    .teakwood-heading {
+      color: inherit;
+    }
   </style>
 </head>
 <body>
@@ -115,43 +111,6 @@
   <a href="#contact" class="floating-contact-btn"><i class="fa-solid fa-envelope"></i> Contact</a>
 
   <main id="main-content">
-    <section data-section="home">
-      <div class="flexslider js-fullheight">
-        <ul class="slides">
-          <li style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/img_bg_1.jpg) no-repeat center center; background-size: cover;">
-            <div class="overlay"></div>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-6 offset-md-3 col-sm-12 js-fullheight slider-text">
-                  <div class="slider-text-inner js-fullheight">
-                    <div class="desc">
-                      <h1>Hi!, <br> I am Mikal Bright Sr.</h1>
-                      <h2>I am looking for my next Challenge!</h2>
-                      <p><a class="btn btn-primary btn-learn" href="2024 Resume of Mikal J. Bright RV.pdf">Download Resume <i class="fa-solid fa-download"></i></a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/img_bg_2.jpg) no-repeat center center; background-size: cover;">
-            <div class="overlay"></div>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-6 offset-md-3 col-sm-12 js-fullheight slider-text">
-                  <div class="slider-text-inner">
-                    <div class="desc">
-                      <h1>I am <br> a Sr. System Engineer</h1>
-                      <h2>Looking to put my Amazing skills to good use!</h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
     <section class="teakwood-services" data-section="services">
 				<div class="teakwood-narrow-content">
 					<div class="row">
@@ -479,27 +438,6 @@
 									            <p>Kaseya VSA 10 Techinican<br/>ITGlue Administrator<br/></p>
 									        </div>
 									    </div>
-									<div class="panel panel-default">
-  <div class="panel-heading" role="tab" id="headingSix">
-    <h4 class="panel-title">
-      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-        Certifications in Progress
-      </a>
-    </h4>
-  </div>
-  <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-    <div class="panel-body">
-      <ul>
-        <li>Microsoft Certified: Azure AI Engineer Associate (AI-102) — In Progress</li>
-        <li>Microsoft Certified: Azure Solutions Architect Expert (AZ-305) — Studying</li>
-        <li>CompTIA Network+ — In Progress</li>
-        <li>AWS Certified Solutions Architect – Associate — Planned</li>
-        <li>Google Cloud Digital Leader — Planned</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
 									</div>
 								</div>
 							</div>
@@ -525,7 +463,7 @@
 					               </div>
 					               <div class="timeline-label">
 					                  <h2 style="color:black;">Sr. Systems Engineer - Paradies Lagardere <span>June 2022 - Present</span></h2>
-					                  <p>As a Lead System Engineer, you will be responsible for resolving critical production issues, managing work streams to enhance ITIL capabilities in IT, coming up with strategies for advancing problem management, implementing new technologies and innovative solutions, mentoring and overseeing engineers, and working on complex companywide projects. You will prepare architectural diagrams, data flow, solution proposals, and presentations, as well as responses to product questions, providing consultation and training to internal teams.</p>
+					                  <p>As a Lead System Engineer, you will be responsible for resolving critical production issues, managing work streams to enhance ITIL capabilities in IT, coming up with strategies for advancing problem management, implementing new technologies and innovative solutions, mentoring and overseeing engineers and working on complex companywide projects. You will prepare architectural diagrams, data flow, solution proposals, and presentations, as well as responses to product questions, providing consultation and training to internal teams.</p>
 					               </div>
 					            </div>
 					         </article>
@@ -536,7 +474,7 @@
 					               </div>
 					               <div class="timeline-label">
 					                  <h2 style="color:black;">Sr. Systems Engineer - tvsdesign <span>April 2019 - June 2022</span></h2>
-					                  <p>Enthusiastic team player managing help desk employees. Daily responsibilities include building out, maintaining, and troubleshooting our technical infrastructure, including but not limited to hardware and software from Cisco, Microsoft, Azure, VMWare, Netapp, Dell, Apple, Zoom, Autodesk Suite, Bluebeam, Newforma, Adobe Creative Cloud, Okta, and Workday. I demonstrate superb technical competency, delivering mission-critical Infrastructure and ensuring the highest availability of hardware, performance, and security levels.</p>
+					                  <p>Enthusiastic team player managing help desk employees. Daily responsibilities include building out, maintaining, and troubleshooting our technical infrastructure, including but limited to; hardware and software from Cisco, Microsoft, Azure, VMWare, Netapp, Dell, Apple, Zoom, Autodesk Suite, Bluebeam, Newforma, Adobe Creative Cloud, Okta, and Workday. I demonstrate superb technical competency, delivering mission-critical Infrastructure and ensuring the highest availability of hardware, performance, and security levels.</p>
 					               </div>
 					            </div>
 					         </article>
@@ -558,7 +496,7 @@
 					               </div>
 					               <div class="timeline-label">
 					                  <h2 style="color:black;">IT Helpdesk Engineer - Agile Resources for NERC (Contract) <span>April 2018-July 2018</span></h2>
-					                  <p>Provides direct support and maintenance to all employees of the company. Takes charge and resolves multiple issues, including analyzing requirements, hardware installation, and configuring software solutions. Acts as liaison in addressing administration and internal support of the company and client’s PCs, printers, servers, phones, software, and related equipment in compliance with company standards.</p>
+					                  <p>Provides direct support and maintenance to all employees of the company. Takes charge and resolves multiple issues including analyzing requirements, hardware installation and configuring and software solutions. Acts as liaison in addressing administration and internal support of the company and client’s PCs, printers, servers, phones, software and related equipment in compliance with company standards.</p>
 					               </div>
 					            </div>
 					         </article>
@@ -569,7 +507,7 @@
 					               </div>
 					               <div class="timeline-label">
 					               	<h2 style="color:black;">Jr. System Administrator - First Investors Financial Services <span>October 2015-April 2018</span></h2>
-					                  <p>Provides direct support and maintenance on behalf of the company’s client base. Spearheads multiple issues, including analyzing requirements, resolving problems, installing hardware and software solutions, and supporting the internal IT helpdesk priorities. Acts as liaison in addressing administration and internal support of the company and client’s PCs, printers, servers, company phone,s and related equipment in compliance with company standards. </p>
+					                  <p>Provides direct support and maintenance on behalf of company’s client base. Spearheads multiple issues including analyzing requirements, resolving problems, installing hardware and software solutions, and supporting the internal IT helpdesk priorities. Acts as liaison in addressing administration and internal support of the company and client’s PCs, printers, servers, company phones and related equipment in compliance with company standards. </p>
 					               </div>
 					            </div>
 					         </article>
@@ -580,7 +518,7 @@
 					               </div>
 					               <div class="timeline-label">
 					               	<h2 style="color:black;">Full Stack Flex Web Developer - The 27ners <span>August 2017-February 2018</span></h2>
-					                  <p>Completed Projects working with a team of three people while attending the coding bootcamp. We built our Taskie website, which is a task-based app. We also built a Patient/Client portal for users and doctors to input client information and track payments. Our first website we built is a dinner picker website which uses the Emotion API and your front facing camera to study your emotions when choosing your next place to eat.</p>
+					                  <p>Completed Projects working with a team of three people while attending the coding bootcamp. We built our Taskie website which is a task-based app. We Also built a Patient/ Client portal for users as well as Doctors to input their clients and keep track of payments. Our first website we built is a dinner picker website which uses the Emotion API and your front facing camera to study your emotions when choosing your next place to eat.</p>
 					               </div>
 					            </div>
 					         </article>
@@ -591,7 +529,7 @@
 					               </div>
 					               <div class="timeline-label">
 					               	<h2 style="color:black;">Jr. System Engineer - Procurri <span>December 2014-October 2015</span></h2>
-					                  <p> Catalyzes installing and supporting hardware, software, and network functionality for Apple, HP, Dell, and IBM x-Series equipment. We received, diagnosed, upgraded, and shipped Apple equipment as well. Replaced the Monitor and hard drive in several iMacs, upgraded RAM and Hard drives in iMac laptops, and replaced batteries and screens in iPhones and iPads. We analyzed, diagnosed, and resolved software, hardware, and network connectivity issues. Maintained technology inventory at designated location. Troubleshoot advanced hardware and software problems utilizing a working knowledge of operating systems/computers in addition to a variety of hardware and software equipment.</p>
+					                  <p>Serves as the catalyst for installing, and supporting hardware, software, and network functionality for Apple, HP, Dell, IBM x-Series equipment. We received, diagnosed, upgraded, and shipped Apple equipment as well. Had to replace the Monitor and hard drive in a few iMacs as well as replaced Ram and Hard drives in iMac laptops and replaced the battery and screens in iPhone and iPad. We Analyzed, diagnosed and resolved software, hardware and network connectivity issues. Maintained technology inventory at designated location. Troubleshoot advanced hardware and software problems utilizing a working knowledge of operating systems/computers in addition to a variety of hardware and software equipment.</p>
 					               </div>
 					            </div>
 					         </article>
@@ -602,7 +540,7 @@
 					               </div>
 					               <div class="timeline-label">
 					               	<h2 style="color:black;">Sr. System Engineer - OnePath, Inc. <span>November 2013-December 2014</span></h2>
-					                  <p>Facilitator for installing and supporting hardware, software, and network functionality for HP, Dell, and IBM x-Series equipment. Responsible for overseeing and spearheading support and operational activities of several service environments in replacing data backup issues with new Windows 2008 Server from old Windows XP Server. Troubleshoot advanced hardware and software problems utilizing a working knowledge of operating systems/computers in addition to a variety of hardware and software equipment. Responsible for overseeing and spearheading support and operational activities of several service environments in replacing data backup issues to new Windows 2008 Server from old Windows XP Server. Testing Rams, Hard Drives, video cards, decoder and encoder cards, motherboards, system fans, custom Power supplies, and video and audio output. UL Upgrades; insuring the unit is properly grounded. Troubleshot touch panel, connection and keypad issues, multifunctioning printers, desktop computers, tablets, and high capacity scanners. Collaborated extensively with various internal and external operational processes to ensure the proper delivery and top operational performance. Provision, test, and ship IRDs for both The TV Guide and The Weather channel.</p>
+					                  <p>Facilitator for installing, and supporting hardware, software, and network functionality for HP, Dell, IBM x-Series equipment. Responsible for overseeing and spearheading support and operational activities of several service environments in replacing data backup issues to new Windows 2008 Server from old Windows XP Server. Troubleshoot advanced hardware and software problems utilizing a working knowledge of operating systems/computers in addition to a variety of hardware and software equipment. Responsible for overseeing and spearheading support and operational activities of several service environments in replacing data backup issues to new Windows 2008 Server from old Windows XP Server. Testing Rams, Hard Drives, video cards, decoder and encoder cards, motherboards, system fans, custom Power supplies, and video and audio output. UL Upgrades; insuring the unit is properly grounded. Troubleshot touch panel, connection and keypad issues, multifunctioning printers, desktop computers, tablets, and high capacity scanners. Collaborated extensively with various internal and external operational processes to ensure the proper delivery and top operational performance. Provision, test, and ship IRDs for both The TV Guide and The Weather channel.</p>
 					               </div>
 					            </div>
 						</article>
@@ -613,7 +551,7 @@
 						       </div>
 						       <div class="timeline-label">
 							<h2 style="color:black;">Project Lead Engineer - Insight Global for Hewlett Packard at Bank of America <span>February 2013-February 2015</span></h2>
-							  <p>Responsible for overseeing and spearheading support and operational activities of several service environments in replacing data backup issues with new Windows 2008 Server from old Windows XP Server. Troubleshot touch panel, connection, and keypad issues, multifunctioning printers, desktop computers, iPads and Tablets, and high capacity scanners. Collaborated extensively with various internal and external operational processes to ensure the proper delivery and top operational performance.</p>
+							  <p>Responsible for overseeing and spearheading support and operational activities of several service environments in replacing data backup issues to new Windows 2008 Server from old Windows XP Server. Troubleshot touch panel, connection and keypad issues, multifunctioning printers, desktop computers, iPads and Tablets, and high capacity scanners. Collaborated extensively with various internal and external operational processes to ensure the proper delivery and top operational performance.</p>
 						       </div>
 						       </div>
 						</article>
@@ -653,7 +591,7 @@
         <div class="project-item">
           <h3 style="font-size: 22px; font-weight: 600; color: #333;">Power App for SQL DB Copy/Delete</h3>
           <p style="margin-bottom: 5px;"><strong>Tools:</strong> Power Apps, Power Automate, Azure Runbooks</p>
-          <p style="color: #555;">Developed a secure Power App interface for IT teams to self-service database copy or deletion tasks. Features include live database lists, timestamped naming, and controlled access to reduce engineer workload.</p>
+          <p style="color: #555;">Developed a secure Power App interface for IT teams to self-service database copy or deletion tasks. Features live database lists, timestamped naming, and controlled access to reduce engineer workload.</p>
         </div>
       </div>
     </div>
@@ -828,16 +766,19 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script>
     $(document).ready(function(){
-      $('.progress-bar').each(function(){
-        let width = $(this).attr('aria-valuenow');
-        $(this).css('width', width + '%');
+      $('.flexslider').flexslider({
+        animation: "fade",
+        slideshowSpeed: 5000,
+        animationSpeed: 1000,
+        controlNav: false,
+        directionNav: false,
+        smoothHeight: true
       });
     });
-
     function toggleDarkMode() {
       document.body.classList.toggle('dark-mode');
     }
