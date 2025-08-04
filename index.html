@@ -1,117 +1,200 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="Explore Mikal Bright's professional portfolio: Azure DevOps, automation, and cloud engineering expertise.">
-  <meta name="keywords" content="Azure DevOps, Automation, Cloud Engineering, PowerShell, Microsoft 365, Mikal Bright">
-  <meta name="author" content="Bright Future Technologies LLC">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Mikal Bright | Azure Cloud Portfolio">
-  <meta property="og:description" content="Explore Mikal Bright's technical journey, automation projects, and cloud engineering experience.">
-  <meta property="og:image" content="https://mikalbright.com/images/AboutMe.jpg">
-  <title>Mikal Bright | Azure Cloud Engineer</title>
-  <link rel="icon" href="/favicon-32x32.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css" integrity="sha512-KeFiXYqf6zHgRci3q84ykKpl6ZsE26mUyT2vuZyYfbCH5Eh3Ywr+9keD2Mlfg3j/5TqKlx2kBjM2ZnztPdF0Jg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    :root {
-      --bg-light: #ffffff;
-      --bg-dark: #121212;
-      --text-light: #333;
-      --text-dark: #e0e0e0;
-    }
-    body {
-      font-family: 'Quicksand', sans-serif;
-      background-color: var(--bg-light);
-      color: var(--text-light);
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    body.dark-mode {
-      background-color: var(--bg-dark);
-      color: var(--text-dark);
-    }
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Playfair Display', serif;
-    }
-    .btn-primary {
-      background-color: #0066cc;
-      border-color: #005cbf;
-    }
-    .btn-primary:hover {
-      background-color: #004c99;
-      border-color: #003f7f;
-    }
-    .floating-contact-btn {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background-color: #007BFF;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 50px;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      z-index: 999;
-    }
-    .floating-contact-btn:hover {
-      background-color: #0056b3;
-    }
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: #000;
-      color: #fff;
-      padding: 8px;
-      z-index: 100;
-    }
-    .skip-link:focus {
-      top: 0;
-    }
-    .dark-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background-color: #222;
-      color: #fff;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      z-index: 1000;
-    }
-    .flexslider {
-      margin: 0;
-      padding: 0;
-    }
-    .flexslider .slides > li {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-    }
-    .slider-text h1,
-    .slider-text h2 {
-      color: #fff;
-    }
-    .teakwood-heading {
-      color: inherit;
-    }
-  </style>
-</head>
-<body>
-  <button class="dark-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-  <a href="#main-content" class="skip-link">Skip to content</a>
-  <a href="#contact" class="floating-contact-btn"><i class="fa-solid fa-envelope"></i> Contact</a>
-
-  <main id="main-content">
-    <section class="teakwood-services" data-section="services">
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Mikal Bright | Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="My Web Portfolio" />
+	<meta name="keywords" content="Portfolio" />
+	<meta name="author" content="Bright Future Technologies LLC" />
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+	<div id="teakwood-page">
+		<div class="container-wrap">
+		<a href="#" class="js-teakwood-nav-toggle teakwood-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		<aside id="teakwood-aside" role="complementary" class="border js-fullheight">
+			<div class="text-center">
+				<div class="author-img" style="background-image: url(images/AboutMe.jpg);"></div>
+				<h1 id="teakwood-logo"><a href="index.html">Mikal Bright Sr.</a></h1>
+				<span class="position">Azure Cloud Engineer<br/>DEVOPs<br/>Sr. Systems Engineer<br/>Drone Pilot<br/> Located In Atlanta</span>
+			</div>
+			<nav id="teakwood-main-menu" role="navigation" class="navbar">
+				<div id="navbar" class="collapse">
+					<ul>
+						<li><a href="#" data-nav-section="home">Home</a></li>
+						<li><a href="#" data-nav-section="about">About</a></li>
+						<li><a href="#" data-nav-section="services">Services</a></li>
+						<li><a href="#" data-nav-section="skills">Skills</a></li>
+						<li><a href="#" data-nav-section="education">Education</a></li>
+						<li><a href="#" data-nav-section="experience">Experience</a></li>
+						<li><a href="#" data-nav-section="projects">Projects</a></li>
+						<li><a href="#" data-nav-section="work">Work</a></li>
+                        			<li><a href="#" data-nav-section="refrences">Refrences</a></li>
+						<li><a href="#" data-nav-section="contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</aside>
+		<div id="teakwood-main">
+			<section id="teakwood-hero" class="js-fullheight" data-section="home">
+				<div class="flexslider js-fullheight">
+					<ul class="slides">
+                        <li style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/img_bg_1.jpg) no-repeat center center;
+                        -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        -o-background-size: cover;
+                         background-size: cover;">
+                            <div class="overlay"></div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+                                        <div class="slider-text-inner js-fullheight">
+                                            <div class="desc">
+                                                <h1>Hi!, <br> I am Mikal Bright Sr.</h1>
+                                                <h2> I am looking for my next Challenge!</h2>
+                                                <p><a class="btn btn-primary btn-learn" href="2024 Resume of Mikal J. Bright RV.pdf">Download Resume <i class="icon-download4"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+			<li style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/img_bg_2.jpg) no-repeat center center;
+                        -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        -o-background-size: cover;
+                         background-size: cover;">
+				   		<div class="overlay"></div>
+				   		<div class="container-fluid">
+				   			<div class="row">
+					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+					   				<div class="slider-text-inner">
+					   					<div class="desc">
+						   					<h1>I am <br>a Sr. System Engineer </h1>
+											<h2>Looking to put my Amazing skills to good use!</h2>
+										</div>
+					   				</div>
+					   			</div>
+					   		</div>
+				   		</div>
+				   	</li>
+				  	</ul>
+			  	</div>
+			</section>
+			<section class="teakwood-about" data-section="about">
+				<div class="teakwood-narrow-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+								<div class="col-md-12">
+									<div class="about-desc">
+										<span class="heading-meta">About Me</span>
+										<h2 class="teakwood-heading" style="color:black;">Who Am I?</h2>
+										<p><strong>Hi, My Name is Mikal Bright Sr.!</strong><br/> I am a highly service-driven and determined technological professional with over 12+ years of diverse experience, from custom building and managing computers and servers to managing, setting up, and building websites. In addition, I have proven capabilities in improving corporate productivity by developing and implementing strategies that foster amazing operating synergies and facilitate lasting and productive change.</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+									<div class="services color-1">
+										<span class="icon2"><i class="icon-lab2"></i></span>
+										<h3 style="color:black;">Azure Cloud Engineer</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+									<div class="services color-2">
+										<span class="icon2"><i class="icon-globe-outline"></i></span>
+										<h3 style="color:black;">Cisco Meraki Administrator</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box fadeInUp animated" data-animate-effect="fadeInTop">
+									<div class="services color-3">
+										<span class="icon2"><i class="icon-data"></i></span>
+										<h3 style="color:black;">Website Designer/ Builder</h3>
+									</div>
+								</div>
+        							<div class="col-md-3 animate-box fadeInUp animated" data-animate-effect="fadeInBottom">
+									<div class="services color-3">
+										<span class="icon2"><i class="icon-camera4"></i></span>
+										<h3 style="color:black;">Licensed Drone Pilot</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box fadeInUp animated" data-animate-effect="fadeInBottom">
+									<div class="services color-4">
+										<span class="icon2"><i class="icon-display2"></i></span>
+										<h3 style="color:black;">System Engineer</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+									<div class="services color-1">
+										<span class="icon2"><i class="icon-lab2"></i></span>
+										<h3 style="color:black;">Custom PC Builder</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box fadeInUp animated" data-animate-effect="fadeInTop">
+									<div class="services color-2">
+										<span class="icon2"><i class="icon-globe-outline"></i></span>
+										<h3 style="color:black;">Kaseya VSA Technician</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
+									<div class="services color-4">
+										<span class="icon2"><i class="icon-display2"></i></span>
+										<h3 style="color:black;">Rubrik Administrator</h3>
+									</div>
+								</div>
+								<div class="col-md-3 animate-box fadeInUp animated" data-animate-effect="fadeInBottom">
+									<div class="services color-3">
+										<span class="icon2"><i class="icon-camera4"></i></span>
+										<h3 style="color:black;">Thycotic Administrator</h3>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire">
+										<h2>I have seamlessly converted a corporate office for a leading Architecture Firm from solely in-office to 100% remote within 6 months without incident.<br/> I also have built, configured, and troubleshot over 1,000 computers and Servers working with The Weather Channel and Procurri!<br/>I am happy to let you know that I have worked on 10+ Web Development projects, and I have six that are in a continuous development stage!</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="teakwood-services" data-section="services">
 				<div class="teakwood-narrow-content">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
@@ -758,30 +841,29 @@
 					</div>
 				</div>
 			</section>
-  </main>
-
-  <footer class="text-center bg-dark text-light py-4">
-    <a href="#top" class="btn btn-light mb-2"><i class="fa fa-arrow-up mr-1"></i>To the top</a>
-    <p>Created and Managed by <a href="https://brightfuturetechllc.com/" target="_blank" class="text-success font-weight-bold">Bright Future Technologies LLC</a></p>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.flexslider').flexslider({
-        animation: "fade",
-        slideshowSpeed: 5000,
-        animationSpeed: 1000,
-        controlNav: false,
-        directionNav: false,
-        smoothHeight: true
-      });
-    });
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-    }
-  </script>
-</body>
+		</div><!-- end:teakwood-main -->
+	</div><!-- end:container-wrap -->
+	</div><!-- end:teakwood-page -->
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-592f24a9ed020a14"></script>
+	<footer class="w3-center w3-black w3-padding-64">
+        	<a href="https://mikalbright.com/" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        	<p>Created and Managed by <a href="https://brightfuturetechllc.com/" title="Bright Future Technologies LLC" target="_blank" class="w3-hover-text-green">Bright Future Technologies LLC</a></p>
+    	</footer>
+	</body>
 </html>
