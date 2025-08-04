@@ -42,32 +42,81 @@
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
+		<style>
+  @media (max-width: 767px) {
+    #teakwood-aside {
+      position: relative;
+      height: auto !important;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .js-fullheight {
+      height: auto !important;
+    }
+
+    #teakwood-main {
+      padding-left: 0 !important;
+    }
+
+    .teakwood-nav-toggle {
+      z-index: 9999;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+    }
+  }
+</style>
 	<div id="teakwood-page">
 		<div class="container-wrap">
-		<a href="#" class="js-teakwood-nav-toggle teakwood-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		<aside id="teakwood-aside" role="complementary" class="border js-fullheight">
-			<div class="text-center">
-				<div class="author-img" style="background-image: url(images/AboutMe.jpg);"></div>
-				<h1 id="teakwood-logo"><a href="index.html">Mikal Bright</a></h1>
-				<span class="position">Azure Cloud Engineer<br/>DEVOPs<br/>DEVOPs Engineer<br/>Drone Pilot<br/> Located In Atlanta</span>
+	<a href="#" class="js-teakwood-nav-toggle teakwood-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+	<aside id="teakwood-aside" role="complementary" class="border js-fullheight">
+		<div class="text-center">
+			<div class="author-img" style="background-image: url(images/AboutMe.jpg);"></div>
+			<h1 id="teakwood-logo"><a href="index.html">Mikal Bright</a></h1>
+			<span class="position">Azure Cloud Engineer<br/>DEVOPs<br/>DEVOPs Engineer<br/>Drone Pilot<br/> Located In Atlanta</span>
+		</div>
+		<nav id="teakwood-main-menu" role="navigation" class="navbar">
+			<div id="navbar" class="collapse">
+				<ul>
+					<li><a href="#" data-nav-section="home">Home</a></li>
+					<li><a href="#" data-nav-section="about">About</a></li>
+					<li><a href="#" data-nav-section="services">Services</a></li>
+					<li><a href="#" data-nav-section="skills">Skills</a></li>
+					<li><a href="#" data-nav-section="education">Education</a></li>
+					<li><a href="#" data-nav-section="experience">Experience</a></li>
+					<li><a href="#" data-nav-section="projects">Projects</a></li>
+					<li><a href="#" data-nav-section="work">Work</a></li>
+					<li><a href="#" data-nav-section="refrences">Refrences</a></li>
+					<li><a href="#" data-nav-section="contact">Contact</a></li>
+				</ul>
 			</div>
-			<nav id="teakwood-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
-					<ul>
-						<li><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">About</a></li>
-						<li><a href="#" data-nav-section="services">Services</a></li>
-						<li><a href="#" data-nav-section="skills">Skills</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
-						<li><a href="#" data-nav-section="projects">Projects</a></li>
-						<li><a href="#" data-nav-section="work">Work</a></li>
-                        			<li><a href="#" data-nav-section="refrences">Refrences</a></li>
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
-		</aside>
+		</nav>
+	</aside>
+
+	<!-- ✅ Injected CSS to fix mobile scrolling issues -->
+	<style>
+		@media (max-width: 767px) {
+			#teakwood-aside {
+				position: relative;
+				height: auto !important;
+				overflow-y: auto;
+				-webkit-overflow-scrolling: touch;
+			}
+			.js-fullheight {
+				height: auto !important;
+			}
+			#teakwood-main {
+				padding-left: 0 !important;
+			}
+			.teakwood-nav-toggle {
+				z-index: 9999;
+				position: fixed;
+				top: 10px;
+				left: 10px;
+			}
+		}
+	</style>
 		<div id="teakwood-main">
 			<section id="teakwood-hero" class="js-fullheight" data-section="home">
 	<div class="flexslider js-fullheight">
