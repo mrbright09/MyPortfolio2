@@ -71,27 +71,37 @@
 
 	<!-- ✅ Injected CSS to fix mobile scrolling issues -->
 	<style>
-		@media (max-width: 767px) {
-			#teakwood-aside {
-				position: relative;
-				height: auto !important;
-				overflow-y: auto;
-				-webkit-overflow-scrolling: touch;
-			}
-			.js-fullheight {
-				height: auto !important;
-			}
-			#teakwood-main {
-				padding-left: 0 !important;
-			}
-			.teakwood-nav-toggle {
-				z-index: 9999;
-				position: fixed;
-				top: 10px;
-				left: 10px;
-			}
+	@media (max-width: 767px) {
+		#teakwood-aside {
+			position: relative;
+			width: 100%;
+			height: auto !important;
+			overflow-y: auto;
+			-webkit-overflow-scrolling: touch;
+			padding: 0;
+			margin: 0;
 		}
-	</style>
+		.js-fullheight {
+			height: auto !important;
+		}
+		#teakwood-main {
+			padding-left: 0 !important;
+			width: 100% !important;
+			margin: 0 auto !important;
+		}
+		body {
+			padding-top: 0 !important;
+			margin: 0 !important;
+			overflow-x: hidden;
+		}
+		.teakwood-nav-toggle {
+			z-index: 9999;
+			position: fixed;
+			top: 10px;
+			left: 10px;
+		}
+	}
+</style>
 		<div id="teakwood-main">
 			<section id="teakwood-hero" class="js-fullheight" data-section="home">
 	<div class="flexslider js-fullheight">
