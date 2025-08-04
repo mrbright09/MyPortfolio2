@@ -21,6 +21,27 @@ body {
     body {
       font-size: 16px; } }
 
+.text-heading {
+	color: #000;
+}
+@media (prefers-color-scheme: dark) {
+	.text-heading {
+		color: #fff;
+	}
+}
+
+.services .icon2 {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 40px;
+}
+
+.services:hover {
+	transform: translateY(-5px);
+	transition: transform 0.3s ease;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
 a {
   color: #2c98f0;
   -webkit-transition: 0.5s;
