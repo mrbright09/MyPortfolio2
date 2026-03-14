@@ -1449,3 +1449,72 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+/* ============================
+   Section alternating backgrounds
+   ============================ */
+.teakwood-about,
+.teakwood-education,
+.teakwood-work,
+.teakwood-contact {
+  background-color: #fff;
+}
+
+.teakwood-services,
+.teakwood-skills,
+.teakwood-experience,
+.teakwood-blog {
+  background-color: #f7f8fa;
+}
+
+/* Subtle top border between sections */
+.teakwood-services,
+.teakwood-skills,
+.teakwood-education,
+.teakwood-experience,
+.teakwood-work,
+.teakwood-blog,
+.teakwood-contact {
+  border-top: 1px solid #ebebeb;
+}
+
+/* ============================
+   Sidebar social icons
+   ============================ */
+.teakwood-footer {
+  padding: 1em 0 0.5em;
+}
+
+.teakwood-footer .teakwood-social li a {
+  color: rgba(255,255,255,0.7);
+  transition: color 0.3s ease;
+}
+
+.teakwood-footer .teakwood-social li a:hover {
+  color: #fff;
+}
+
+/* ============================
+   Smooth section transitions
+   ============================ */
+section {
+  transition: background-color 0.3s ease;
+}
+
+/* ============================
+   Projects section consistent styling
+   ============================ */
+.teakwood-projects {
+  background-color: #f7f8fa !important;
+  border-top: 1px solid #ebebeb;
+}
+
+/* ============================
+   Timeline label first-child
+   ============================ */
+.timeline-label h2 span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #999;
+  margin-left: 10px;
+}
