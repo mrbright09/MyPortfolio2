@@ -1518,3 +1518,233 @@ section {
   color: #999;
   margin-left: 10px;
 }
+
+/* ============================
+   CSS Custom Properties (Design Tokens)
+   ============================ */
+:root {
+  --color-primary: #2c98f0;
+  --color-accent: #bc5700;
+  --color-dark: #1a1a1a;
+  --color-light-bg: #f7f8fa;
+  --color-border: #ebebeb;
+  --color-text: rgba(0,0,0,0.7);
+  --color-text-muted: #999;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 50px;
+  --transition: 0.3s ease;
+  --shadow-card: 0 4px 20px rgba(0,0,0,0.08);
+  --shadow-hover: 0 8px 30px rgba(0,0,0,0.14);
+}
+
+/* ============================
+   Smooth Scroll
+   ============================ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================
+   Skill Tags / Badge Grid
+   ============================ */
+.skill-category-title {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--color-text-muted);
+  margin: 1.5em 0 0.6em;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 0.5em;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background: #fff;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-dark);
+  font-family: "Quicksand", Arial, sans-serif;
+  letter-spacing: 0.3px;
+  transition: all var(--transition);
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44,152,240,0.25);
+}
+
+/* ============================
+   Modern Card Hover Effect
+   ============================ */
+.blog-entry {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.blog-entry:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+/* ============================
+   Modern Timeline Label
+   ============================ */
+.timeline-label {
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow var(--transition);
+}
+
+.timeline-label:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+/* ============================
+   Hero CTA button pulse
+   ============================ */
+.btn-learn {
+  animation: pulse-btn 3s infinite;
+}
+
+@keyframes pulse-btn {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(157, 74, 3, 0.4); }
+  50%       { box-shadow: 0 0 0 10px rgba(157, 74, 3, 0); }
+}
+
+/* ============================
+   Modern Contact Feature Icons
+   ============================ */
+.teakwood-feature .teakwood-icon {
+  border-radius: var(--radius-md);
+  transition: background var(--transition);
+}
+
+.teakwood-feature:hover .teakwood-icon {
+  background: var(--color-primary);
+}
+
+.teakwood-feature:hover .teakwood-icon i {
+  color: #fff;
+}
+
+/* ============================
+   Contact section CTA buttons
+   ============================ */
+.teakwood-contact .btn-primary.btn-outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.teakwood-contact .btn-primary.btn-outline:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+/* ============================
+   Hire / callout box modernized
+   ============================ */
+.hire {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.hire h2 {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* ============================
+   Services card hover
+   ============================ */
+.services {
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.services:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ============================
+   Section heading underline accent
+   ============================ */
+.teakwood-heading {
+  position: relative;
+  padding-bottom: 0.5em;
+}
+
+.teakwood-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--color-primary);
+  border-radius: 2px;
+}
+
+/* ============================
+   Progress bar modernized
+   ============================ */
+.progress-wrap {
+  margin-bottom: 2em;
+}
+
+/* ============================
+   Improved Mobile Nav
+   ============================ */
+@media screen and (max-width: 768px) {
+  .skill-tags {
+    gap: 6px;
+  }
+  .skill-tag {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
+
+/* ============================
+   Dark mode enhancements
+   ============================ */
+@media (prefers-color-scheme: dark) {
+  .skill-tag {
+    background: #2a2a2a;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+  .skill-tag:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+  }
+  .blog-entry {
+    background: #1e1e1e;
+  }
+  .timeline-label {
+    background: #2a2a2a;
+  }
+  .hire {
+    color: #000;
+  }
+}
