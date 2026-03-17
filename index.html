@@ -41,6 +41,8 @@
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="canonical" href="https://mikalbright.com/">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/animate.css">
@@ -66,14 +68,353 @@
     "postalCode": "30044",
     "addressCountry": "US"
   },
-  "email": "mailto:MikalBright@gmail.com",
-  "telephone": "+1-404-637-7647",
+  "email": "mailto:Mikal.Bright@brightfuturetechllc.com",
+  "telephone": "+1-678-561-5302",
   "sameAs": [
-    "https://www.linkedin.com/in/mikalb",
+    "https://www.linkedin.com/company/bright-future-technologies-llc/",
     "https://github.com/mrbright09"
   ]
 }
 </script>
+
+<style>
+/* ══════════════════════════════════════════════
+   MIKALBRIGHT.COM — REDESIGN OVERRIDES
+   ══════════════════════════════════════════════ */
+:root {
+  --blue:       #0066FF;
+  --blue-hover: #0044CC;
+  --blue-light: #66aaff;
+  --navy:       #050A18;
+}
+
+/* ── GLOBAL FONT ── */
+body, .teakwood-heading, .heading-meta,
+h1, h2, h3, h4, h5 {
+  font-family: 'Inter', 'Quicksand', Arial, sans-serif !important;
+}
+
+/* ── SECTION HEADING STYLES ── */
+.teakwood-heading {
+  font-weight: 800 !important;
+  letter-spacing: -0.01em !important;
+}
+.heading-meta {
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  font-size: 0.72rem !important;
+  color: var(--blue) !important;
+  text-transform: uppercase !important;
+}
+
+/* ── HERO ── */
+#home .desc h1 {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.12;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+}
+#home .desc h2 {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.88);
+  margin-top: 0.65rem;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.3);
+}
+.hero-eyebrow {
+  display: inline-block;
+  background: rgba(0,102,255,0.22);
+  border: 1px solid rgba(0,102,255,0.45);
+  border-radius: 50px;
+  padding: 0.28rem 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--blue-light);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+.btn-hero-primary {
+  background: var(--blue) !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 0.72rem 1.6rem !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.88rem !important;
+  color: #fff !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  margin-right: 0.6rem !important;
+  margin-bottom: 0.5rem !important;
+  box-shadow: 0 4px 16px rgba(0,102,255,0.4) !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+  display: inline-block;
+}
+.btn-hero-primary:hover {
+  background: var(--blue-hover) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 22px rgba(0,102,255,0.5) !important;
+  color: #fff !important;
+}
+.btn-hero-secondary {
+  background: transparent !important;
+  border: 2px solid rgba(255,255,255,0.65) !important;
+  border-radius: 50px !important;
+  padding: 0.72rem 1.6rem !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 0.88rem !important;
+  color: #fff !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  margin-bottom: 0.5rem !important;
+  transition: background 0.2s !important;
+  display: inline-block;
+}
+.btn-hero-secondary:hover {
+  background: rgba(255,255,255,0.12) !important;
+  color: #fff !important;
+}
+
+/* ── STATS BAR ── */
+#stats-bar {
+  background: #07101f;
+  border-top: 1px solid rgba(0,102,255,0.2);
+  border-bottom: 1px solid rgba(0,102,255,0.2);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.stat-item {
+  flex: 1;
+  min-width: 160px;
+  max-width: 240px;
+  text-align: center;
+  padding: 1.4rem 1rem;
+  border-right: 1px solid rgba(255,255,255,0.07);
+}
+.stat-item:last-child { border-right: none; }
+.stat-num {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--blue);
+  line-height: 1;
+}
+.stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-top: 0.3rem;
+}
+
+/* ── CERT STRIP (after services) ── */
+#cert-strip {
+  background: #f0f4ff;
+  border-top: 1px solid #dde6ff;
+  border-bottom: 1px solid #dde6ff;
+  padding: 1.25rem 0;
+}
+.cert-strip-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.cert-badge-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #fff;
+  border: 1.5px solid #c0d4ff;
+  border-radius: 50px;
+  padding: 0.4rem 1.1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--blue-hover);
+  white-space: nowrap;
+}
+
+/* ── ABOUT CERT PILLS ── */
+.about-cert-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.2rem 0;
+}
+.cert-pill-about {
+  background: #f0f4ff;
+  border: 1.5px solid #c0d4ff;
+  border-radius: 50px;
+  padding: 0.3rem 0.85rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--blue-hover);
+}
+.btn-linkedin-connect {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #0077B5;
+  color: #fff !important;
+  border-radius: 50px;
+  padding: 0.62rem 1.4rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 0.84rem;
+  text-decoration: none !important;
+  transition: background 0.2s;
+  margin-top: 0.75rem;
+}
+.btn-linkedin-connect:hover { background: #005a8a; color: #fff !important; }
+
+/* ── HIGHLIGHT BOX (about differentiator) ── */
+.hire.highlight-box {
+  border-left: 4px solid var(--blue) !important;
+  background: #f7f9ff !important;
+  border-radius: 0 8px 8px 0;
+}
+
+/* ── SERVICE CARDS ── */
+.services {
+  border-radius: 10px !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+  border-bottom: 3px solid var(--blue) !important;
+}
+.services:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 10px 28px rgba(0,102,255,0.15) !important;
+}
+/* Unify icon colors to blue */
+.services .icon i, .services .icon2 i {
+  color: var(--blue) !important;
+}
+/* Remove old color-1 through color-6 borders and replace with single blue */
+.color-1, .color-2, .color-3, .color-4, .color-5, .color-6 {
+  border-bottom-color: var(--blue) !important;
+}
+
+/* ── SKILLS SECTION — Force visible (override JS animation) ── */
+#skills .animate-box {
+  opacity: 1 !important;
+  transform: none !important;
+  -webkit-transform: none !important;
+}
+.skill-category-title {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: var(--blue-hover) !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.55rem !important;
+}
+.skill-tags { display: flex !important; flex-wrap: wrap !important; gap: 0.4rem !important; }
+.skill-tag {
+  background: #f0f4ff !important;
+  border: 1.5px solid #c0d4ff !important;
+  border-radius: 50px !important;
+  padding: 0.28rem 0.8rem !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+  color: var(--blue-hover) !important;
+  transition: all 0.18s !important;
+  cursor: default;
+}
+.skill-tag:hover {
+  background: var(--blue) !important;
+  border-color: var(--blue) !important;
+  color: #fff !important;
+}
+
+/* ── PROJECTS ── */
+.project-item {
+  border-left: 3px solid var(--blue);
+  padding-left: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+.project-item h3 {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  color: #111 !important;
+}
+
+/* ── COUNTER SECTION ── */
+.teakwood-counter-label {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+/* ── FLOATING CTA ── */
+#float-cta {
+  position: fixed;
+  bottom: 1.6rem;
+  right: 1.6rem;
+  background: var(--blue);
+  color: #fff !important;
+  border: none;
+  border-radius: 50px;
+  padding: 0.72rem 1.5rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.86rem;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(0,102,255,0.45);
+  cursor: pointer;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#float-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(0,102,255,0.55);
+  color: #fff !important;
+}
+
+/* ── CONTACT FORM BUTTON ── */
+#contact .btn.btn-primary {
+  background: var(--blue) !important;
+  border-color: var(--blue) !important;
+  border-radius: 50px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  padding: 0.7rem 1.6rem !important;
+}
+#contact .btn.btn-primary:hover { background: var(--blue-hover) !important; }
+
+/* ── FOOTER LINKS ── */
+footer a { transition: color 0.2s; }
+footer a:hover { color: var(--blue) !important; }
+
+/* ── MOBILE ── */
+@media (max-width: 576px) {
+  #stats-bar { flex-direction: column; }
+  .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  #home .desc h1 { font-size: 2.1rem; }
+  #float-cta { padding: 0.6rem 1.1rem; font-size: 0.8rem; bottom: 1rem; right: 1rem; }
+}
+</style>
 
 	</head>
 	<body>
@@ -110,9 +451,9 @@ Lawrenceville, GA
 		</nav>
 	<div class="teakwood-footer text-center">
 		<ul class="teakwood-social" style="list-style:none; padding:0; margin-top:20px;">
-			<li style="display:inline-block; margin:0 8px;"><a href="https://www.linkedin.com/in/mikalb" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin" style="font-size:22px; color:#fff;"></i></a></li>
+			<li style="display:inline-block; margin:0 8px;"><a href="https://www.linkedin.com/company/bright-future-technologies-llc/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin" style="font-size:22px; color:#fff;"></i></a></li>
 			<li style="display:inline-block; margin:0 8px;"><a href="https://github.com/mrbright09" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github" style="font-size:22px; color:#fff;"></i></a></li>
-			<li style="display:inline-block; margin:0 8px;"><a href="mailto:MikalBright@gmail.com" title="Email"><i class="fa-solid fa-envelope" style="font-size:22px; color:#fff;"></i></a></li>
+			<li style="display:inline-block; margin:0 8px;"><a href="mailto:Mikal.Bright@brightfuturetechllc.com" title="Email"><i class="fa-solid fa-envelope" style="font-size:22px; color:#fff;"></i></a></li>
 		</ul>
 	</div>
 	</aside>
@@ -131,9 +472,13 @@ Lawrenceville, GA
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
 							<div class="slider-text-inner js-fullheight">
 								<div class="desc">
-									<h1>Hello, <br> I am Mikal Bright</h1>
-									<h2>Transforming Enterprise IT Through Cloud &amp; Automation</h2>
-									<p><a class="btn btn-primary btn-learn" href="Mikal_J_Bright_Resume_Azure_DevOps_Lead.pdf" target="_blank" rel="noopener noreferrer">Download My Current Resume <i class="icon-download4"></i></a></p>
+									<span class="hero-eyebrow">Azure Cloud Engineer &middot; DevOps Architect &middot; Automation Specialist</span>
+									<h1>The Architect Behind<br>Your Cloud Infrastructure</h1>
+									<h2>12+ years engineering enterprise automation, cloud migrations, and intelligent IT systems that scale.</h2>
+									<p>
+										<a class="btn-hero-primary" href="#work">View My Work <i class="icon-arrow-right3"></i></a>
+										<a class="btn-hero-secondary" href="#contact">Let's Connect</a>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -151,8 +496,13 @@ Lawrenceville, GA
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
 							<div class="slider-text-inner js-fullheight">
 								<div class="desc">
-									<h1>I am <br>an Azure Cloud Engineer</h1>
-									<h2>Building Intelligent Solutions for the Modern Enterprise</h2>
+									<span class="hero-eyebrow">PowerShell &middot; Power Platform &middot; FAA Part 107 Drone Pilot</span>
+									<h1>Engineering Systems<br>That Run Themselves</h1>
+									<h2>From Azure Runbooks to Power Apps — I build automation that eliminates manual work at scale.</h2>
+									<p>
+										<a class="btn-hero-primary" href="Mikal_J_Bright_Resume_Azure_DevOps_Lead.pdf" target="_blank" rel="noopener noreferrer">Download Resume <i class="icon-download4"></i></a>
+										<a class="btn-hero-secondary" href="#about">My Story</a>
+									</p>
 								</div>
 							</div>
 						</div>
@@ -162,6 +512,31 @@ Lawrenceville, GA
 		</ul>
 	</div>
 </section>
+
+<!-- ── STATS BAR ── -->
+<div id="stats-bar" role="region" aria-label="Career highlights">
+  <div class="stat-item">
+    <div class="stat-num">12+</div>
+    <div class="stat-label">Years Experience</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">100+</div>
+    <div class="stat-label">Projects Delivered</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">70%</div>
+    <div class="stat-label">Manual Work Eliminated</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">5×</div>
+    <div class="stat-label">Azure Certified</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">FAA</div>
+    <div class="stat-label">Licensed Drone Pilot</div>
+  </div>
+</div>
+
 			<section id="about" class="teakwood-about" data-section="about" aria-label="About Mikal Bright">
 				<div class="teakwood-narrow-content">
 					<div class="row">
@@ -176,68 +551,25 @@ Lawrenceville, GA
 								</div>
 							</div>
 							<div class="row">
-								<div class="row">
-	<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-		<div class="hire highlight-box">
-			<p>I’ve developed intelligent automation systems using <strong>Azure Automation Runbooks</strong> and <strong>PowerShell</strong> to manage VM sizing, SQL database copies, and backup operations — reducing manual workloads by over 70%.</p>
-			<p>I’ve also built secure <strong>Power Apps</strong> interfaces paired with <strong>Power Automate</strong> flows that empower non-technical teams to trigger complex operations safely.</p>
-			<p style="margin-bottom:0;">My scripts integrate with <strong>Microsoft Graph API</strong> and Azure resources, enabling self-service capabilities while maintaining enterprise-grade control.</p>
-		</div>
-	</div>
-</div>
-								<div class="col-md-3 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-									<div class="services color-1">
-										<span class="icon2"><i class="icon-lab2"></i></span>
-										<h3 style="color:black;">Azure Cloud Engineer</h3>
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<div class="hire highlight-box">
+										<p>I’ve developed intelligent automation systems using <strong>Azure Automation Runbooks</strong> and <strong>PowerShell</strong> to manage VM sizing, SQL database copies, and backup operations — reducing manual workloads by over 70%.</p>
+										<p>I’ve also built secure <strong>Power Apps</strong> interfaces paired with <strong>Power Automate</strong> flows that empower non-technical teams to trigger complex operations safely.</p>
+										<p style="margin-bottom:0;">My scripts integrate with <strong>Microsoft Graph API</strong> and Azure resources, enabling self-service capabilities while maintaining enterprise-grade control.</p>
 									</div>
 								</div>
-								<div class="col-md-3 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
-									<div class="services color-2">
-										<span class="icon2"><i class="icon-globe-outline"></i></span>
-										<h3 style="color:black;">Cisco Meraki Administrator</h3>
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft" style="margin-top:1.5rem;">
+									<div class="about-cert-pills">
+										<span class="cert-pill-about">☁️ Azure Administrator (AZ-104)</span>
+										<span class="cert-pill-about">⚙️ Azure DevOps Expert (AZ-400)</span>
+										<span class="cert-pill-about">🔷 Power Platform (PL-200)</span>
+										<span class="cert-pill-about">🚁 FAA Part 107 Drone Pilot</span>
+										<span class="cert-pill-about">🖥️ CompTIA A+</span>
+										<span class="cert-pill-about">🌐 Cisco Meraki Admin</span>
 									</div>
-								</div>
-								<div class="col-md-3 animate-box fadeInUp animated" data-animate-effect="fadeInTop">
-									<div class="services color-3">
-										<span class="icon2"><i class="icon-code"></i></span>
-										<h3 style="color:black;">Website Designer/Builder</h3>
-									</div>
-								</div>
-        							<div class="col-md-3 animate-box fadeInUp animated" data-animate-effect="fadeInBottom">
-									<div class="services color-3">
-										<span class="icon2"><i class="icon-camera4"></i></span>
-										<h3 style="color:black;">Licensed Drone Pilot</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box fadeInUp animated" data-animate-effect="fadeInBottom">
-									<div class="services color-4">
-										<span class="icon2"><i class="icon-display2"></i></span>
-										<h3 style="color:black;">System Engineer</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
-									<div class="services color-1">
-										<span class="icon2"><i class="icon-lab2"></i></span>
-										<h3 style="color:black;">Custom PC Builder</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box fadeInUp animated" data-animate-effect="fadeInTop">
-									<div class="services color-2">
-										<span class="icon2"><i class="icon-globe-outline"></i></span>
-										<h3 style="color:black;">Kaseya VSA Technician</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box fadeInRight animated" data-animate-effect="fadeInRight">
-									<div class="services color-4">
-										<span class="icon2"><i class="icon-display2"></i></span>
-										<h3 style="color:black;">Rubrik Administrator</h3>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box fadeInUp animated" data-animate-effect="fadeInBottom">
-									<div class="services color-3">
-										<span class="icon2"><i class="icon-lock"></i></span>
-										<h3 style="color:black;">Thycotic Administrator</h3>
-									</div>
+									<a href="https://www.linkedin.com/company/bright-future-technologies-llc/" target="_blank" rel="noopener noreferrer" class="btn-linkedin-connect">
+										<i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+									</a>
 								</div>
 							</div>
 							<div class="row">
@@ -340,6 +672,18 @@ Lawrenceville, GA
         </div>
     </div>
 </section>
+
+<!-- ── CERT STRIP ── -->
+<div id="cert-strip" role="region" aria-label="Certifications">
+  <div class="cert-strip-inner">
+    <span class="cert-badge-strip"><i class="fa-solid fa-cloud" style="color:var(--blue);"></i> Azure Administrator AZ-104</span>
+    <span class="cert-badge-strip"><i class="fa-solid fa-code-branch" style="color:var(--blue);"></i> DevOps Expert AZ-400</span>
+    <span class="cert-badge-strip"><i class="fa-solid fa-bolt" style="color:var(--blue);"></i> Power Platform PL-200</span>
+    <span class="cert-badge-strip"><i class="fa-solid fa-drone" style="color:var(--blue);"></i> FAA Part 107</span>
+    <span class="cert-badge-strip"><i class="fa-solid fa-computer" style="color:var(--blue);"></i> CompTIA A+</span>
+  </div>
+</div>
+
 			<div id="teakwood-counter" class="teakwood-counters" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
 	<div class="overlay"></div>
 	<div class="teakwood-narrow-content">
@@ -836,7 +1180,7 @@ Lawrenceville, GA
 						<div class="col-md-5 animate-box" data-animate-effect="fadeInLeft">
 							<div class="teakwood-feature teakwood-feature-sm">
 								<div class="teakwood-icon"><i class="fa-solid fa-envelope"></i></div>
-								<div class="teakwood-text"><p><a href="mailto:MikalBright@gmail.com" style="color:inherit;">MikalBright@gmail.com</a></p></div>
+								<div class="teakwood-text"><p><a href="mailto:Mikal.Bright@brightfuturetechllc.com" style="color:inherit;">Mikal.Bright@brightfuturetechllc.com</a></p></div>
 							</div>
 							<div class="teakwood-feature teakwood-feature-sm">
 								<div class="teakwood-icon"><i class="fa-solid fa-location-dot"></i></div>
@@ -844,11 +1188,11 @@ Lawrenceville, GA
 							</div>
 							<div class="teakwood-feature teakwood-feature-sm">
 								<div class="teakwood-icon"><i class="fa-solid fa-phone"></i></div>
-								<div class="teakwood-text"><p><a href="tel:+14046377647" style="color:inherit;">(404) 637-7647</a></p></div>
+								<div class="teakwood-text"><p><a href="tel:+16785615302" style="color:inherit;">678-561-5302</a></p></div>
 							</div>
 							<div class="teakwood-feature teakwood-feature-sm">
 								<div class="teakwood-icon"><i class="fa-brands fa-linkedin"></i></div>
-								<div class="teakwood-text"><p><a href="https://www.linkedin.com/in/mikalb" target="_blank" rel="noopener noreferrer" style="color:inherit;">linkedin.com/in/mikalb</a></p></div>
+								<div class="teakwood-text"><p><a href="https://www.linkedin.com/company/bright-future-technologies-llc/" target="_blank" rel="noopener noreferrer" style="color:inherit;">Bright Future Technologies LLC</a></p></div>
 							</div>
 							<div class="teakwood-feature teakwood-feature-sm" style="margin-bottom:0;">
 								<div class="teakwood-icon"><i class="fa-brands fa-github"></i></div>
@@ -911,5 +1255,11 @@ Lawrenceville, GA
 		</div>
 		<p style="color:#777; font-size:13px; margin-top:1em;">&copy; <script>document.write(new Date().getFullYear())</script> Mikal Bright &mdash; Designed &amp; managed by <a href="https://brightfuturetechllc.com/" title="Bright Future Technologies LLC" target="_blank" rel="noopener noreferrer" style="color:#aaa;">Bright Future Technologies LLC</a></p>
     </footer>
+
+<!-- ── FLOATING CTA ── -->
+<a id="float-cta" href="#contact" aria-label="Contact Mikal Bright">
+  <i class="fa-solid fa-envelope"></i> Let's Talk
+</a>
+
 	</body>
 </html>
