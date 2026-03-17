@@ -209,7 +209,7 @@
 
 	var sliderMain = function() {
 		
-	  	$('#teakwood-hero .flexslider').flexslider({
+	  	$('#home .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
 			directionNav: true,
