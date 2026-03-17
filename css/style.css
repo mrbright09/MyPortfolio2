@@ -128,7 +128,8 @@ figure {
     display: block;
     margin-bottom: 2em;
     font-size: 12px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75); }
   #teakwood-aside #teakwood-logo {
     text-align: right;
     font-weight: 700;
