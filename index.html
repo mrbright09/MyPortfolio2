@@ -23,28 +23,63 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <meta name="theme-color" content="#0066FF">
+<!-- Indexing & Geo -->
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="US-GA">
+<meta name="geo.placename" content="Lawrenceville, Georgia">
+<meta name="geo.position" content="33.9526;-83.9877">
+<meta name="ICBM" content="33.9526, -83.9877">
+<!-- Performance: preload hero image -->
+<link rel="preload" as="image" href="images/img_bg_1.jpg">
+<!-- LinkedIn professional profile OG -->
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Mikal Bright Portfolio" />
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "Person",
-  "name": "Mikal Bright",
-  "jobTitle": "Azure Cloud Engineer | DevOps Architect",
-  "url": "https://www.mikalbright.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Atlanta",
-    "addressRegion": "GA",
-    "postalCode": "30044",
-    "addressCountry": "US"
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mikal Bright",
+    "jobTitle": "Azure Cloud Engineer | DevOps Architect | Automation Specialist",
+    "url": "https://mikalbright.com",
+    "image": "https://mikalbright.com/images/AboutMe.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lawrenceville",
+      "addressRegion": "GA",
+      "postalCode": "30044",
+      "addressCountry": "US"
+    },
+    "email": "mailto:Mikal.Bright@brightfuturetechllc.com",
+    "telephone": "+1-678-561-5302",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Bright Future Technologies LLC",
+      "url": "https://brightfuturetechllc.com"
+    },
+    "hasCredential": [
+      {"@type": "EducationalOccupationalCredential", "name": "Microsoft Azure Administrator (AZ-104)"},
+      {"@type": "EducationalOccupationalCredential", "name": "Microsoft Azure DevOps Expert (AZ-400)"},
+      {"@type": "EducationalOccupationalCredential", "name": "Power Platform Fundamentals (PL-900)"},
+      {"@type": "EducationalOccupationalCredential", "name": "FAA Part 107 Commercial Drone Pilot"},
+      {"@type": "EducationalOccupationalCredential", "name": "CompTIA A+"}
+    ],
+    "knowsAbout": ["Azure", "PowerShell", "DevOps", "Power Automate", "Power Apps", "Microsoft Graph API", "Cloud Architecture", "IT Automation"],
+    "sameAs": [
+      "https://www.linkedin.com/company/bright-future-technologies-llc/",
+      "https://github.com/mrbright09"
+    ]
   },
-  "email": "mailto:Mikal.Bright@brightfuturetechllc.com",
-  "telephone": "+1-678-561-5302",
-  "sameAs": [
-    "https://www.linkedin.com/company/bright-future-technologies-llc/",
-    "https://github.com/mrbright09"
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://mikalbright.com",
+    "name": "Mikal Bright | Azure Cloud Engineer & DevOps Architect",
+    "description": "Personal portfolio of Mikal Bright — Azure Cloud Engineer, DevOps Architect, and Automation Specialist based in Lawrenceville, GA.",
+    "author": {"@type": "Person", "name": "Mikal Bright"}
+  }
+]
 </script>
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
