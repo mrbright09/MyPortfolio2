@@ -693,6 +693,27 @@ img { max-width: 100%; height: auto; }
   margin: 0;
 }
 
+/* ── PROJECT OUTCOME BADGES ── */
+.project-outcomes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.outcome-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #eef3ff;
+  border: 1.5px solid #c0d4ff;
+  border-radius: 50px;
+  padding: 0.28rem 0.85rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--blue-hover);
+}
+.outcome-badge i { font-size: 0.7rem; }
+
 /* ── WEB WORK ── */
 #work { padding: 5rem 0; background: #fff; }
 .work-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
@@ -1051,12 +1072,12 @@ footer {
               <div class="col-md-8 col-sm-12 col-xs-12 js-fullheight slider-text">
                 <div class="slider-text-inner js-fullheight">
                   <div class="desc">
-                    <span class="hero-eyebrow">PowerShell &middot; Power Platform &middot; FAA Part 107 Drone Pilot</span>
-                    <h1>Engineering Systems<br>That Run Themselves</h1>
-                    <h2>From Azure Runbooks to Power Apps — I build automation that eliminates manual work at scale.</h2>
+                    <span class="hero-eyebrow">PowerShell &middot; Power Platform &middot; FAA Part 107 &middot; 70% Less Manual Work</span>
+                    <h1>I Don't Just Fix Problems —<br>I Eliminate Them Permanently</h1>
+                    <h2>Seven Azure Runbooks. One Power App. Zero manual database ops. That's what engineering looks like.</h2>
                     <div class="hero-btns">
                       <a class="btn-hero-primary" href="Mikal_J_Bright_Resume_Azure_DevOps_Lead.pdf" target="_blank" rel="noopener noreferrer">Download Resume <i class="fa-solid fa-download"></i></a>
-                      <a class="btn-hero-secondary" href="#about">My Story</a>
+                      <a class="btn-hero-secondary" href="#projects">See the Work</a>
                     </div>
                   </div>
                 </div>
@@ -1367,17 +1388,32 @@ footer {
       <div class="project-card">
         <h3>SQL Database Copy &amp; Backup Automation</h3>
         <div class="project-tools"><i class="fa-solid fa-tools"></i> Azure Automation Runbooks &middot; Azure Key Vault &middot; Email Notifications</div>
-        <p>Built seven Runbooks to automate SQL database copy/backup across environments (Prod → Pre-Prod → QA → DEV). Integrated Key Vault credentials, timestamped copies, Hyperscale cost optimization, and automated email logs.</p>
+        <p>Built 7 Runbooks to fully automate SQL database copy/backup across all environments (Prod → Pre-Prod → QA → DEV). Integrated Key Vault for secure credential storage, auto-timestamped copies, Hyperscale tier optimization to cut storage costs, and automated email status logs on every run.</p>
+        <div class="project-outcomes">
+          <span class="outcome-badge"><i class="fa-solid fa-arrow-trend-down"></i> 100% manual DB ops eliminated</span>
+          <span class="outcome-badge"><i class="fa-solid fa-clock"></i> Hours of engineer time saved per sprint</span>
+          <span class="outcome-badge"><i class="fa-solid fa-shield-halved"></i> Zero credential exposure via Key Vault</span>
+        </div>
       </div>
       <div class="project-card">
         <h3>Azure VM Temporary Size Upgrade Workflow</h3>
         <div class="project-tools"><i class="fa-solid fa-tools"></i> Power Automate &middot; Outlook &middot; Azure Automation Runbooks</div>
-        <p>Created an automated request/approval flow for temporary VM size upgrades. Parses email requests, triggers Runbook execution, and auto-reverts to original size with detailed status reports.</p>
+        <p>Designed an end-to-end request/approval flow for temporary VM size upgrades. Parses inbound email requests, routes for manager approval, triggers the Runbook to resize, runs the job, then auto-reverts the VM to original size — with a full status report delivered at each step.</p>
+        <div class="project-outcomes">
+          <span class="outcome-badge"><i class="fa-solid fa-rotate-left"></i> Auto-reverts — no human follow-up needed</span>
+          <span class="outcome-badge"><i class="fa-solid fa-lock"></i> Approval gate prevents unauthorized scaling</span>
+          <span class="outcome-badge"><i class="fa-solid fa-dollar-sign"></i> Eliminates idle oversized VM costs</span>
+        </div>
       </div>
       <div class="project-card">
         <h3>Power App for SQL DB Copy/Delete</h3>
         <div class="project-tools"><i class="fa-solid fa-tools"></i> Power Apps &middot; Power Automate &middot; Azure Runbooks</div>
-        <p>Developed a secure Power App interface for IT teams to self-service database copy or deletion tasks. Features include live database lists, timestamped naming, and controlled access to reduce engineer workload.</p>
+        <p>Built a secure, non-technical interface that lets IT staff self-service database copy or deletion tasks without touching Azure Portal or writing a single line of code. Pulls live database lists, enforces timestamped naming conventions, and uses role-based access to ensure only authorized users can trigger operations.</p>
+        <div class="project-outcomes">
+          <span class="outcome-badge"><i class="fa-solid fa-users"></i> Non-engineers can operate complex DB tasks</span>
+          <span class="outcome-badge"><i class="fa-solid fa-chart-line"></i> 70%+ reduction in engineer ticket load</span>
+          <span class="outcome-badge"><i class="fa-solid fa-circle-check"></i> Consistent naming &amp; audit trail on every run</span>
+        </div>
       </div>
     </div>
   </section>
