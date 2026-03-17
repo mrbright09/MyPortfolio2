@@ -162,7 +162,7 @@ figure {
         text-transform: uppercase;
         letter-spacing: 1px; }
         #teakwood-aside #teakwood-main-menu ul li a {
-          color: rgba(255, 255, 255, 0.7);
+          color: #fff;
           text-decoration: none;
           position: relative;
           padding: 10px 0;
@@ -267,6 +267,7 @@ figure {
       position: relative;
       overflow: visible; }
       #teakwood-hero .flexslider .slides li {
+        background-color: #1a1a1a;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
@@ -444,7 +445,7 @@ body.offcanvas {
   display: block;
   font-size: 10px;
   text-transform: uppercase;
-  color: #999999;
+  color: #646464;
   font-weight: 500;
   letter-spacing: 5px; }
 
@@ -484,7 +485,7 @@ body.offcanvas {
   text-transform: uppercase;
   font-family: "Quicksand", Arial, sans-serif;
   background-color: #c9a84c;
-  color: #fff;
+  color: #2d2d2d;
   position: relative;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
@@ -628,11 +629,7 @@ body.offcanvas {
   color: #000; }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
-  -webkit-opacity: .4;
-  -moz-opacity: .4;
-  opacity: .4;
-  -ms-filter: alpha(opacity=40);
-  filter: alpha(opacity=40);
+  color: #646464;
   font-size: 16px; }
 
 .services {
@@ -926,7 +923,7 @@ body.offcanvas {
     letter-spacing: 1px;
     font-weight: 400; }
     .blog-entry .desc span small i {
-      color: #999999; }
+      color: #646464; }
   .blog-entry .desc .lead {
     font-size: 12px;
     text-transform: uppercase;
@@ -1094,7 +1091,7 @@ body.offcanvas {
     font-weight: 700;
     margin-bottom: .3em; }
   .teakwood-counters .teakwood-counter-label {
-    color: rgba(255, 255, 255, 0.7);
+    color: #fff;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 5px;
@@ -1115,7 +1112,7 @@ body.offcanvas {
     *display: inline; }
     .teakwood-social li a {
       font-size: 22px;
-      color: rgba(255,255,255,0.7);
+      color: #fff;
       padding: 10px;
       display: -moz-inline-stack;
       display: inline-block;
@@ -1208,7 +1205,7 @@ body.offcanvas {
 
 .btn-primary {
   background: #c9a84c;
-  color: #fff;
+  color: #2d2d2d;
   border: 2px solid #c9a84c; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background: #44a4f2 !important;
@@ -1486,7 +1483,7 @@ body.offcanvas {
 }
 
 .teakwood-footer .teakwood-social li a {
-  color: rgba(255,255,255,0.7);
+  color: #fff;
   transition: color 0.3s ease;
 }
 
@@ -1515,7 +1512,7 @@ section {
 .timeline-label h2 span {
   font-size: 13px;
   font-weight: 400;
-  color: #999;
+  color: #646464;
   margin-left: 10px;
 }
 
