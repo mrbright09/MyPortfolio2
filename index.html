@@ -1404,6 +1404,19 @@ footer {
       </div>
 
       <div class="project-card">
+        <h3>Safe Senders Automation &amp; Intune Enforcement</h3>
+        <div class="project-tools"><i class="fa-solid fa-tools"></i> Power Automate &middot; Azure Automation &middot; Exchange Online &middot; SharePoint &middot; Intune &middot; Microsoft Graph API</div>
+        <p>Built a Power Platform–driven Safe Senders management solution that replaced a manual, network-share-dependent process with a fully automated, auditable multi-tenant workflow. SharePoint acts as the master source of truth. Power Automate updates the file and fires a webhook to Azure Automation, which connects to Exchange Online via app-based auth, calculates per-tenant add/remove changes, applies them, and logs every run to a SharePoint list. Intune remediation scripts push the safe senders file to Classic Outlook cached-mode endpoints — covering all three Outlook client types through the correct control path for each.</p>
+        <div class="project-outcomes">
+          <span class="outcome-badge"><i class="fa-solid fa-network-wired"></i> Replaced manual network-share process entirely</span>
+          <span class="outcome-badge"><i class="fa-solid fa-envelope-circle-check"></i> Covers New Outlook, Classic online &amp; Classic cached mode</span>
+          <span class="outcome-badge"><i class="fa-solid fa-building"></i> Multi-tenant safe sender management from one source of truth</span>
+          <span class="outcome-badge"><i class="fa-solid fa-list-check"></i> Full audit log written to SharePoint on every run</span>
+          <span class="outcome-badge"><i class="fa-solid fa-shield-halved"></i> App-based auth — no stored credentials</span>
+        </div>
+      </div>
+
+      <div class="project-card">
         <h3>SQL Database Copy &amp; Backup Automation</h3>
         <div class="project-tools"><i class="fa-solid fa-tools"></i> Azure Automation Runbooks &middot; Azure Key Vault &middot; Email Notifications</div>
         <p>Built 7 Runbooks to fully automate SQL database copy/backup across all environments (Prod → Pre-Prod → QA → DEV). Integrated Key Vault for secure credential storage, auto-timestamped copies, Hyperscale tier optimization to cut storage costs, and automated email status logs on every run.</p>
