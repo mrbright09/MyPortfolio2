@@ -1013,6 +1013,7 @@ footer {
       <li><a href="#projects" data-nav-section="projects"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
       <li><a href="#work" data-nav-section="work"><i class="fa-solid fa-globe"></i> Web Work</a></li>
       <li><a href="#references" data-nav-section="references"><i class="fa-solid fa-star"></i> References</a></li>
+      <li><a href="#press" data-nav-section="press"><i class="fa-solid fa-newspaper"></i> Press</a></li>
       <li><a href="#contact" data-nav-section="contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
     </ul>
   </nav>
@@ -1446,6 +1447,27 @@ footer {
           <span class="outcome-badge"><i class="fa-solid fa-circle-check"></i> Consistent naming &amp; audit trail on every run</span>
         </div>
       </div>
+      <div class="project-card">
+        <h3>Microsoft Copilot Incident Review Agent</h3>
+        <div class="project-tools"><i class="fa-solid fa-robot"></i> Microsoft Copilot Studio &middot; Power Automate &middot; ServiceNow &middot; Microsoft Teams &middot; JSON Orchestration</div>
+        <p>Developed an internal Copilot Agent that automatically analyzes ServiceNow incidents and generates structured operational summaries for leadership. Incident data flows from ServiceNow into Power Automate, gets passed to a Copilot Agent prompt for AI-driven pattern analysis, and returns a structured JSON response delivered directly to Microsoft Teams.</p>
+        <div class="project-outcomes">
+          <span class="outcome-badge"><i class="fa-solid fa-brain"></i> AI-driven root cause analysis from raw incident data</span>
+          <span class="outcome-badge"><i class="fa-solid fa-file-code"></i> Structured JSON output with confidence scoring</span>
+          <span class="outcome-badge"><i class="fa-solid fa-paper-plane"></i> Auto-delivered summaries to Microsoft Teams</span>
+          <span class="outcome-badge"><i class="fa-solid fa-clock"></i> Eliminates manual weekend incident reporting</span>
+        </div>
+      </div>
+      <div class="project-card">
+        <h3>Azure Guest User Cleanup Automation</h3>
+        <div class="project-tools"><i class="fa-solid fa-tools"></i> Microsoft Graph API &middot; Azure AD &middot; PowerShell &middot; Sign-in Logs</div>
+        <p>Built an automation that audits and removes stale Azure AD guest accounts. The script identifies guests with no recent sign-in activity and no active document sharing relationships, reducing tenant security exposure from orphaned external identities.</p>
+        <div class="project-outcomes">
+          <span class="outcome-badge"><i class="fa-solid fa-shield-halved"></i> Reduces external identity attack surface</span>
+          <span class="outcome-badge"><i class="fa-solid fa-magnifying-glass"></i> Cross-references sign-in logs &amp; sharing relationships</span>
+          <span class="outcome-badge"><i class="fa-solid fa-circle-check"></i> Improves tenant security posture automatically</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -1569,6 +1591,46 @@ footer {
     </div>
   </section>
 
+  <!-- ── PRESS ── -->
+  <section id="press" data-section="press" style="padding: 5rem 0; background: #fff;">
+    <div class="section-inner">
+      <span class="section-label" style="text-align:center; display:block;">As Seen In</span>
+      <h2 class="section-title" style="text-align:center;">Press &amp; Media</h2>
+      <div class="row" style="justify-content:center;">
+        <div class="col-md-5 col-sm-6" style="margin-bottom:1.5rem;">
+          <div class="ref-card">
+            <div class="ref-header">
+              <div style="width:48px;height:48px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;margin-right:0.75rem;flex-shrink:0;">
+                <i class="fa-solid fa-newspaper" style="color:#fff;font-size:1.2rem;"></i>
+              </div>
+              <div>
+                <div class="ref-name">Voyage ATL</div>
+                <div class="ref-meta">Life &amp; Work Feature</div>
+              </div>
+            </div>
+            <p class="ref-quote">"Life &amp; Work with Mikal Bright" &#8212; A feature interview exploring the career journey, entrepreneurial mindset, and technical vision behind Bright Future Technologies LLC.</p>
+            <a class="ref-link" href="http://voyageatl.com/interview/life-work-with-mikal-bright-sr-of-atlanta/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Read Full Interview</a>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6" style="margin-bottom:1.5rem;">
+          <div class="ref-card">
+            <div class="ref-header">
+              <div style="width:48px;height:48px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;margin-right:0.75rem;flex-shrink:0;">
+                <i class="fa-solid fa-microphone-lines" style="color:#fff;font-size:1.2rem;"></i>
+              </div>
+              <div>
+                <div class="ref-name">Shoutout Atlanta</div>
+                <div class="ref-meta">Tech Owner &amp; Director Feature</div>
+              </div>
+            </div>
+            <p class="ref-quote">"Meet Mikal Bright &#8212; Tech Owner &amp; Director" &#8212; A spotlight feature on building Bright Future Technologies LLC and engineering solutions at the intersection of cloud, automation, and AI.</p>
+            <a class="ref-link" href="https://shoutoutatlanta.com/meet-mikal-bright-tech-owner-director/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Read Full Feature</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ── CONTACT ── -->
   <section id="contact" data-section="contact" style="padding: 5rem 0; background: #fff;">
     <div class="section-inner">
@@ -1637,6 +1699,7 @@ footer {
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#references">References</a>
+      <a href="#press">Press</a>
       <a href="#contact">Contact</a>
     </div>
     <p class="footer-copy">&copy; <script>document.write(new Date().getFullYear())</script> Mikal Bright &mdash; Designed &amp; managed by <a href="https://brightfuturetechllc.com/" target="_blank" rel="noopener noreferrer">Bright Future Technologies LLC</a></p>
