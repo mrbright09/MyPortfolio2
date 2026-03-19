@@ -203,6 +203,8 @@ figure {
 		margin: 0 auto;
 		margin-bottom: 30px;
 		@include border-radius(50%);
+		background-size: cover;
+		background-position: center 15%;
 	}
 	.position{
 		display: block;
