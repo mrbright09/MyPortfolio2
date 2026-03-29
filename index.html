@@ -283,26 +283,44 @@ img { max-width: 100%; height: auto; }
 .flex-viewport { max-height: none !important; }
 .slides > li { position: relative; }
 
+/* Make the full-height chain work so text centers properly */
+.slides > li .container-fluid,
+.slides > li .row {
+  height: 100%;
+}
+.slides > li .row {
+  display: flex;
+  align-items: center;
+}
+
 .slider-text { display: flex; align-items: center; height: 100%; }
 .slider-text-inner { padding: 6rem 3rem 6rem 4rem; max-width: 700px; }
 
 /* Hero headshot — displayed as img to avoid background-cover zoom */
 .hero-photo-col {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
   overflow: hidden;
   padding: 0;
   position: relative;
+  align-self: stretch;
 }
 .hero-photo-img {
-  max-height: 92%;
-  width: auto;
-  object-fit: contain;
-  object-position: bottom center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
   display: block;
+}
+/* Fade the left edge of the photo into the dark background */
+.hero-photo-col::before {
+  content: '';
   position: absolute;
-  bottom: 0;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(to right, #0d1b3e 0%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .hero-eyebrow {
