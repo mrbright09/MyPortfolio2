@@ -286,6 +286,25 @@ img { max-width: 100%; height: auto; }
 .slider-text { display: flex; align-items: center; height: 100%; }
 .slider-text-inner { padding: 6rem 3rem 6rem 4rem; max-width: 700px; }
 
+/* Hero headshot — displayed as img to avoid background-cover zoom */
+.hero-photo-col {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.hero-photo-img {
+  max-height: 92%;
+  width: auto;
+  object-fit: contain;
+  object-position: bottom center;
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
 .hero-eyebrow {
   display: inline-block;
   background: rgba(0,102,255,0.22);
@@ -1046,7 +1065,7 @@ footer {
   <section id="home" class="js-fullheight" data-section="home">
     <div class="flexslider js-fullheight">
       <ul class="slides">
-        <li style="background: linear-gradient(to bottom, rgba(0,0,0,0.68), rgba(0,0,0,0.68)), url(images/img_bg_1.jpg) no-repeat center center; background-size: cover;">
+        <li style="background: linear-gradient(135deg, #05091a 0%, #0d1b3e 60%, #05091a 100%);">
           <div class="overlay"></div>
           <div class="container-fluid">
             <div class="row">
@@ -1063,10 +1082,13 @@ footer {
                   </div>
                 </div>
               </div>
+              <div class="col-md-4 hidden-sm hidden-xs js-fullheight hero-photo-col">
+                <img src="images/img_bg_1.jpg" class="hero-photo-img" alt="Mikal Bright professional photo">
+              </div>
             </div>
           </div>
         </li>
-        <li style="background: linear-gradient(to bottom, rgba(0,0,0,0.68), rgba(0,0,0,0.68)), url(images/img_bg_2.jpg) no-repeat center center; background-size: cover;">
+        <li style="background: linear-gradient(135deg, #05091a 0%, #0d1b3e 60%, #05091a 100%);">
           <div class="overlay"></div>
           <div class="container-fluid">
             <div class="row">
@@ -1082,6 +1104,9 @@ footer {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="col-md-4 hidden-sm hidden-xs js-fullheight hero-photo-col">
+                <img src="images/img_bg_2.jpg" class="hero-photo-img" alt="Mikal Bright with drone">
               </div>
             </div>
           </div>
