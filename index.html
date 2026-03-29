@@ -787,6 +787,22 @@ img { max-width: 100%; height: auto; }
   color: rgba(255,255,255,0.65);
   margin: 0;
 }
+.work-card--featured {
+  border: 2px solid var(--blue);
+  box-shadow: 0 0 0 4px rgba(0,102,255,0.18);
+}
+.work-card-badge {
+  display: inline-block;
+  background: var(--blue);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 0.15rem 0.6rem;
+  margin-bottom: 0.35rem;
+}
 
 /* ── REFERENCES ── */
 #references { padding: 5rem 0; background: var(--blue-pale); }
@@ -1520,18 +1536,19 @@ footer {
       <span class="section-label">My Website Projects</span>
       <h2 class="section-title">Recent Web Projects</h2>
       <div class="work-grid">
+        <a class="work-card work-card--featured" href="https://brightfuturetechllc.com/" target="_blank" rel="noopener noreferrer">
+          <img src="images/img-03.png" alt="Bright Future Technologies LLC" loading="lazy">
+          <div class="work-card-info">
+            <span class="work-card-badge">Featured</span>
+            <div class="work-card-title">Bright Future Technologies LLC</div>
+            <div class="work-card-sub">Computer Services / Web Design</div>
+          </div>
+        </a>
         <a class="work-card" href="https://www.e100northmetro.org/" target="_blank" rel="noopener noreferrer">
           <img src="images/img-28.jpeg" alt="Emerging 100 Black Men of North Metro Atlanta" loading="lazy">
           <div class="work-card-info">
             <div class="work-card-title">Emerging 100 Black Men of North Metro Atlanta</div>
             <div class="work-card-sub">Community Organization</div>
-          </div>
-        </a>
-        <a class="work-card" href="https://brightfuturetechllc.com/" target="_blank" rel="noopener noreferrer">
-          <img src="images/img-03.png" alt="Bright Future Technologies LLC" loading="lazy">
-          <div class="work-card-info">
-            <div class="work-card-title">Bright Future Technologies LLC</div>
-            <div class="work-card-sub">Computer Services / Web Design</div>
           </div>
         </a>
         <a class="work-card" href="https://mrbright09.github.io/JavaJam/" target="_blank" rel="noopener noreferrer">
